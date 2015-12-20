@@ -25,13 +25,18 @@ int main (int argc, char * const argv[])
 		"12,a,x,r,6", 
 		"13,x,x,r,13", "13,#,#,r,13","13, , ,r,0"*/
 
-		"0,a,x,r,2",
-		"1,a,x,r,2", "1,b,b,r,6", "1,y,y,r,6",
-		"2,a,a,r,2", "2,b,y,r,3", "2,y,y,r,2", "2,z,z,l,5",
-		"3,b,b,r,3", "3,c,z,l,4", "3,z,z,r,3",
-		"4,b,b,l,4", "4,y,y,r,2", "4,z,z,l,4",
-		"5,a,a,l,5", "5,x,x,r,1", "5,y,b,l,5", "5,z,z,l,5",
-		"6,b,b,r,6", "6,y,y,r,6", "6,z,z,r,6", "6, , ,r,accept"
+		"0,a,a,r,1",
+		"1,a,a,r,1", "1,b,b,r,2",
+		"2,b,b,r,2", "2,c,c,r,3",
+		"3,c,c,r,3", "3, , ,l,4",
+		"4,a,a,l,4", "4,b,b,l,4", "4,c,c,l,4", "4, , ,r,5",
+		"5,a,x,r,6",
+		"6,a,a,r,6", "6,b,y,r,7", "6,y,y,r,6", "6,z,z,l,9",
+		"7,b,b,r,7", "7,c,z,l,8", "7,z,z,r,7",
+		"8,b,b,l,8", "8,y,y,r,6", "8,z,z,l,8",
+		"9,a,a,l,9", "9,x,x,r,10", "9,y,b,l,9", "9,z,z,l,9",
+		"10,a,x,r,6", "10,b,b,r,11", "10,y,y,r,11",
+		"11,b,b,r,11", "11,y,y,r,11", "11,z,z,r,11", "11, , ,r,accept"
 	};
 	std::vector<std::string> rules(std::begin(str_rules), std::end(str_rules));
 	Simulation* mainSim = new Simulation(rules);
